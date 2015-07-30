@@ -2,11 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+#if __UNIFIED__
+ using Foundation;
+ using UIKit;
+ using CoreLocation;
+#else
+ using MonoTouch.Foundation;
+ using MonoTouch.UIKit;
+ using MonoTouch.CoreLocation;
+#endif
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
 using Beacon.Plugin.Abstractions;
-using MonoTouch.CoreLocation;
+
 
 namespace Beacon.Plugin
 {

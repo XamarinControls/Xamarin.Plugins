@@ -35,10 +35,15 @@
     <DocumentationFile>bin\iPhone\Release\Beacon.Plugin.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\Beacon.Plugin.iOS\BeaconImplementation.cs">
+      <Link>BeaconImplementation.cs</Link>
+    </Compile>
+    <Compile Include="..\Beacon.Plugin.iOS\Utils.cs">
+      <Link>Utils.cs</Link>
+    </Compile>
     <Compile Include="..\Beacon.Plugin\CrossBeacon.cs">
       <Link>CrossBeacon.cs</Link>
     </Compile>
-    <Compile Include="BeaconImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

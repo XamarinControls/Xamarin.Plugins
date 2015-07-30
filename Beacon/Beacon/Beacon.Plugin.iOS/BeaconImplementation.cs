@@ -1,9 +1,18 @@
 using Beacon.Plugin.Abstractions;
-using MonoTouch.CoreBluetooth;
-using MonoTouch.CoreFoundation;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+#if __UNIFIED__
+ using CoreBluetooth;
+ using CoreFoundation;
+ using CoreLocation;
+ using Foundation;
+ using UIKit;
+#else
+ using MonoTouch.CoreBluetooth;
+ using MonoTouch.CoreFoundation;
+ using MonoTouch.CoreLocation;
+ using MonoTouch.Foundation;
+ using MonoTouch.UIKit;
+#endif
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -82,7 +91,7 @@ namespace Beacon.Plugin
               
               CLBeacon beacon = e.Beacons[0];
               //string message = "";
-              BeaconItem item = new BeaconItem(e.Region.Identifier, beacon.ProximityUuid.AsString(), beacon.Rssi, beacon.Major.UInt16Value, beacon.Minor.UInt16Value, beacon.Proximity.ToBeaconProximity());
+              BeaconItem item = new BeaconItem(e.Region.Identifier, beacon.ProximityUuid.AsString(), (int)beacon.Rssi, beacon.Major.UInt16Value, beacon.Minor.UInt16Value, beacon.Proximity.ToBeaconProximity());
               CrossBeacon.BeaconListener.OnRangingChange(item);
 
 
