@@ -5,3 +5,4 @@ Cross platform Xamarin plugins for PCLs and .NET Standard
 * **[File Uploader](https://github.com/CrossGeeks/FileUploaderPlugin)**: Upload files using multipart request.
 * **[Multilingual](https://github.com/CrossGeeks/MultilingualPlugin)**: Handling language localization.
 * **[Push Notification](https://github.com/CrossGeeks/PushNotificationPlugin)**: Receive and handle push notifications.
+* **[Facebook Client](https://github.com/CrossGeeks/FacebookClientPlugin)**: Facebook login, sharing, facebook graph requests and permissions handling.
