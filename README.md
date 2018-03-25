@@ -15,6 +15,7 @@ Cross platform Xamarin plugins for PCLs and .NET Standard
 
 # Authentication & Social 
 * **[Facebook Client](https://github.com/CrossGeeks/FacebookClientPlugin)**: Facebook login, sharing, facebook graph requests and permissions handling.
+* **[Google Client](https://github.com/CrossGeeks/GoogleClientPlugin)**: Google authentication.
 
 # Sensors
 * **[Device Sensors](https://github.com/CrossGeeks/DeviceSensorsPlugin)**: Access to device sensors: accelerometer, gyroscope, magnetometer, barometer, pedometer.
