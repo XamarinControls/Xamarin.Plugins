@@ -20,3 +20,7 @@ Cross platform Xamarin plugins for PCLs and .NET Standard
 
 # Sensors
 * **[Device Sensors](https://github.com/CrossGeeks/DeviceSensorsPlugin)**: Access to device sensors: accelerometer, gyroscope, magnetometer, barometer, pedometer.
+
+# Tracking
+
+ **[Geofence](https://github.com/CrossGeeks/GeofencePlugin)**: Handle geofence events such as entering, leaving and staying in a geofence region.
