@@ -23,4 +23,4 @@ Cross platform Xamarin plugins for PCLs and .NET Standard
 
 # Tracking
 
- **[Geofence](https://github.com/CrossGeeks/GeofencePlugin)**: Handle geofence events such as entering, leaving and staying in a geofence region.
+* **[Geofence](https://github.com/CrossGeeks/GeofencePlugin)**: Handle geofence events such as entering, leaving and staying in a geofence region.
